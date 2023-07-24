@@ -339,7 +339,9 @@ def populateGNNEntity(data_param):
             entity_info = loadFile(fl_nm)
             num+=1
             print("itteration",num)
-
+            file_tmp = open("myfile.txt","w")
+            file_tmp.writelines(num)
+            file_tmp.close()
           else:
             fl_nm = code_path+conf_val['intr_ent_fl_nm']
             entity_info = loadFile(fl_nm)
